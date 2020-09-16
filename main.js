@@ -5,10 +5,10 @@ const addName = (e) => {
     e.preventDefault();
     const input = document.querySelector('input');
     const name = input.value;
-    if() {
+    if(input.value.length) {
         names.push(name);
-        div.textContent += name;
-    }
-}
+        div.textContent += `${name}, `;
+    };
+};
 
 document.querySelector('button').addEventListener('click', addName);
